@@ -8,27 +8,27 @@ public class Main {
 
         /* MAIN TASK:
         - Declare a variable of a String type, the name of which consists of several words.
-        - Create a constant "num" of a int type and set any value to it.
+        - Create a constant "NUM" of a int type and set any value to it.
         - Create a variable “word” of a String type with any value.
         - Set the value of the variable declared at the very beginning, which would consist
-        of the result of the concatenation the constants "num" and the variable "word".
+        of the result of the concatenation the constants "NUM" and the variable "word".
         - Display the value of all variables on one line */
 
         String worldBestPlaces;
-        final int num = 12;
+        final int NUM = 12;
         String word = " the best countries to live. ";
-        worldBestPlaces = num + word;
-        System.out.println(worldBestPlaces + num + word);
+        worldBestPlaces = NUM + word;
+        System.out.println(worldBestPlaces + NUM + word);
 
 
         /* - Add a conditional construction that would display the following: if the value
-         of the constant “num” less than zero - “You have stored a negative number”,
+         of the constant “NUM” less than zero - “You have stored a negative number”,
          if the value is greater than zero - “You have saved a positive number ",
          otherwise - "You have stored zero"*/
 
-        if (num > 0) {
+        if (NUM > 0) {
             System.out.println("You've saved a positive number");
-        } else if (num < 0) {
+        } else if (NUM < 0) {
             System.out.println("You've saved a negative number");
         } else {
             System.out.println("You've have stored zero");
