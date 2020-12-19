@@ -34,4 +34,10 @@ public class Boss {
     public void setDamage(int damage) {
         this.damage = damage;
     }
+
+    public  void bossInfo() {
+        System.out.println("Boss Health: " + health + " " + "Boss Damage: " +  damage + " "
+                + "Boss Defence Type: " +  bossDefenceType);
+
+    }
 }

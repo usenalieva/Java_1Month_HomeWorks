@@ -13,8 +13,7 @@ public class Main {
         boss.setHealth(700);
         boss.setBossDefenceType("Random");
         boss.setDamage(50);
-        System.out.println("Boss Health: " + boss.getHealth() + " " + "Boss Damage: " + boss.getDamage() + " "
-                + "Boss Defence Type: " + boss.getBossDefenceType());
+        boss.bossInfo();
 
 
          /* ADDITIONAL TASK:
