@@ -13,16 +13,7 @@ public class Main {
     Then print out all the information about the boss.*/
 
 
-        Boss bossInfo = new Boss (250,50);
+        new Boss (250,50, new Weapon("Rifle", "M 16")).info();;
 
-
-        Weapon weapon = new Weapon("Rifle", "M 16");
-        bossInfo.setWeapon(weapon);
-
-
-        System.out.println("Boss Health: " + bossInfo.getHealth() +
-                "\nBoss Damage: " + bossInfo.getDamage() +
-                "\nBoss chose weapon: " + bossInfo.getWeapon().getWeaponType()+
-                "\nWeapons name: " + bossInfo.getWeapon().getWeaponName());
     }
 }
