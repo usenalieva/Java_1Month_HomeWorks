@@ -13,11 +13,11 @@ public class Witcher extends Hero {
     @Override
     public void applySuperAbilityAfterRound(Boss boss, Hero[] heroes) {
         if (this.getHealth() > 0) {
-            for (int i = 0; i < heroes.length; i++) {
-                if (heroes[i].getHealth() == 0 && heroes[i] != this
-                        && heroes[i] != heroes[8]) {
-                    heroes[i].setHealth(heroes[i].getHealth() + this.getHealth());
-                    System.out.println("Witcher revives " + heroes[i].getClass().getSimpleName());
+            for (Hero hero : heroes) {
+                if (hero.getHealth() == 0 && hero != this
+                        && !hero.getClass().getSimpleName().equals("TrickyBastard")) {
+                    hero.setHealth(hero.getHealth() + this.getHealth());
+                    System.out.println("Witcher revives " + hero.getClass().getSimpleName());
                     this.setHealth(0);
 
                 }
